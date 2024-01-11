@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:background="#708998"
+        app:layout_constraintEnd_toEndOf="@+id/vaccine_image"
+        app:layout_constraintStart_toStartOf="@+id/vaccine_image"
+        app:layout_constraintTop_toBottomOf="@+id/vaccine_image" />
+
+    <ImageView
+        android:id="@+id/vaccine_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcg" />
+
+    <TextView
+        android:id="@+id/vaccine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="10dp"
+        android:text="BCG - 1st T.B vaccine"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/vaccine_image"
+        app:layout_constraintTop_toTopOf="@+id/vaccine_image" />
+
+    <TextView
+        android:id="@+id/vaccine_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date: 12/12/2020"
+        app:layout_constraintStart_toStartOf="@+id/vaccine_name"
+        app:layout_constraintTop_toBottomOf="@+id/vaccine_name" />
+
+    <ImageView
+        android:id="@+id/vaccine_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vaccine_date"
+        app:layout_constraintStart_toEndOf="@+id/vaccine_date"
+        app:layout_constraintTop_toTopOf="@+id/vaccine_date"
+        app:srcCompat="@drawable/vaccine_applied"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
